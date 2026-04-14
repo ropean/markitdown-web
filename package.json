@@ -1,0 +1,32 @@
+{
+  "name": "markitdown-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "docker:down": "docker stop markitdown-web 2>/dev/null; docker rm markitdown-web 2>/dev/null; echo 'Stopped and removed'",
+    "docker:up": "docker build -t markitdown-web . && docker run -d --name markitdown-web -p 5006:3000 markitdown-web && echo 'Running at http://localhost:5006'",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.1",
+    "nuxt": "^3.21.2",
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@fontsource/geist-sans": "^5.2.5",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@types/markdown-it": "^14.1.2",
+    "lucide-vue-next": "^1.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@parcel/watcher"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+.output
+dist
+.git
+docs
+*.md
+!README.md

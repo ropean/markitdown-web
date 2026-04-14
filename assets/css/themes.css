@@ -1,0 +1,70 @@
+/* Light theme (default) */
+:root,
+.light-mode {
+  --color-primary: #3e6ae1;
+  --color-primary-hover: #3560d0;
+  --color-primary-text: #ffffff;
+
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f4f4;
+  --color-bg-elevated: #ffffff;
+
+  --color-text-primary: #171a20;
+  --color-text-secondary: #393c41;
+  --color-text-tertiary: #5c5e62;
+  --color-placeholder: #8e8e8e;
+
+  --color-border: #eeeeee;
+  --color-border-strong: #d0d1d2;
+
+  --color-success: #2e7d32;
+  --color-error: #c62828;
+
+  --color-drop-zone-bg: #f8f9fc;
+  --color-drop-zone-border: #d0d1d2;
+  --color-drop-zone-active-border: #3e6ae1;
+  --color-drop-zone-active-bg: #eef2fb;
+
+  --color-badge-bg: #f4f4f4;
+  --color-badge-text: #5c5e62;
+
+  --color-code-bg: #f4f4f4;
+
+  --color-scrollbar: #d0d1d2;
+  --color-scrollbar-hover: #8e8e8e;
+}
+
+/* Dark theme */
+.dark-mode {
+  --color-primary: #5b85f5;
+  --color-primary-hover: #7399f7;
+  --color-primary-text: #ffffff;
+
+  --color-bg: #171a20;
+  --color-bg-alt: #1e2128;
+  --color-bg-elevated: #22252d;
+
+  --color-text-primary: #f4f4f4;
+  --color-text-secondary: #d0d1d2;
+  --color-text-tertiary: #8e8e8e;
+  --color-placeholder: #5c5e62;
+
+  --color-border: #2a2d33;
+  --color-border-strong: #3a3d44;
+
+  --color-success: #66bb6a;
+  --color-error: #ef5350;
+
+  --color-drop-zone-bg: #1e2128;
+  --color-drop-zone-border: #3a3d44;
+  --color-drop-zone-active-border: #5b85f5;
+  --color-drop-zone-active-bg: #1e2440;
+
+  --color-badge-bg: #2a2d33;
+  --color-badge-text: #8e8e8e;
+
+  --color-code-bg: #1e2128;
+
+  --color-scrollbar: #3a3d44;
+  --color-scrollbar-hover: #5c5e62;
+}
