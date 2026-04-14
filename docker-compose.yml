@@ -1,0 +1,7 @@
+services:
+  markitdown-web:
+    image: ghcr.io/ropean/markitdown-web:latest
+    container_name: markitdown-web
+    restart: unless-stopped
+    ports:
+      - "5006:3000"

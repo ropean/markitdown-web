@@ -19,7 +19,7 @@ const FORMAT_GROUPS = [
   { label: 'Other', formats: ['ZIP'] },
 ]
 
-const MAX_SIZE_MB = 50
+const MAX_SIZE_MB = 20
 const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024
 
 function handleDragOver(e: DragEvent) {
@@ -86,7 +86,7 @@ function triggerFileInput() {
         <p class="upload-title">
           {{ loading ? 'Converting...' : 'Drop your file here' }}
         </p>
-        <p v-if="!loading" class="upload-subtitle">or click to browse</p>
+        <p v-if="!loading" class="upload-subtitle">or click to browse · max {{ MAX_SIZE_MB }}MB</p>
       </div>
 
       <div v-if="!loading" class="format-groups">

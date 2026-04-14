@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { convertWithMarkitdown } from '../utils/markitdown'
 
-const MAX_FILE_SIZE = 50 * 1024 * 1024 // 50MB
+const MAX_FILE_SIZE = 20 * 1024 * 1024 // 20MB
 
 export default defineEventHandler(async (event) => {
   const formData = await readMultipartFormData(event)
@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
   }
 
   if (fileField.data.length > MAX_FILE_SIZE) {
-    throw createError({ statusCode: 413, message: 'File size exceeds 50MB limit' })
+    throw createError({ statusCode: 413, message: 'File size exceeds 20MB limit' })
   }
 
   const originalFilename = fileField.filename.replace(/[^a-zA-Z0-9._-]/g, '_')

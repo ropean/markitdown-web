@@ -6,7 +6,7 @@ import { resolve } from 'node:path'
 const execFileAsync = promisify(execFile)
 
 const TIMEOUT_MS = 60_000
-const MAX_BUFFER = 50 * 1024 * 1024 // 50MB
+const MAX_BUFFER = 20 * 1024 * 1024 // 20MB
 
 function resolveMarkitdownBin(): string {
   if (process.env.MARKITDOWN_BIN) {
