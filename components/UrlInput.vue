@@ -26,7 +26,6 @@ function handleSubmit() {
         v-model="url"
         type="url"
         class="url-text"
-        placeholder="https://example.com or YouTube URL"
         :disabled="loading"
       />
       <button
