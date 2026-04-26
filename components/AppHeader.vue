@@ -8,8 +8,7 @@ import { Github } from 'lucide-vue-next'
       <AppLogo />
       <div class="header-actions">
         <a
-          href="https://github.com/ropean/markitdown-hub"
-          target="_blank"
+          href="https://github.com/ropean/markitdown-web"
           rel="noopener noreferrer"
           class="header-link"
           aria-label="GitHub repository"
