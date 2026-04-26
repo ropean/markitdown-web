@@ -16,7 +16,7 @@
         </a>
         ·
         <a
-          href="https://github.com/ropean/markitdown-hub"
+          href="https://github.com/ropean/markitdown-web"
           target="_blank"
           rel="noopener noreferrer"
         >
