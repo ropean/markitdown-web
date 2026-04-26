@@ -36,10 +36,14 @@
 
 .app-main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow-y: auto;
 }
 
 .app-footer {
